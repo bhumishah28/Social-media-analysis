@@ -1,0 +1,118 @@
+.auth-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.auth-left {
+  flex: 1;
+  background: #fdeee7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-left img {
+  width: 100%;
+}
+
+.auth-right {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-right h2 {
+  margin-bottom: 10px;
+}
+
+.auth-right p {
+  margin-bottom: 30px;
+}
+
+.auth-right input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 20px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+}
+
+.auth-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+/* Ensure the checkbox and its text sit on the same line */
+.auth-options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.auth-right input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  vertical-align: middle;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background: linear-gradient(to right, #ff512f, #f09819);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.login-btn {
+  display: block;
+  width: 75%;
+  margin: 20px auto 0;
+}
+.login-btn:hover {
+  background: linear-gradient(to right, #f09819, #ff512f);
+}
+h1{
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: bold;
+
+}
+.register-link {
+  color: orangered;
+  text-decoration: none;
+  font-weight: 600;
+}
+.register-link:hover {
+  color: rgb(192, 89, 51);
+}
+input:focus {
+  border-bottom-color: orangered;
+}
+.or {
+  text-align: center;
+  margin: 20px 0;
+  color: gray;
+}
+.img{
+    object-fit: cover;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socials span {
+  font-size: 20px;
+  cursor: pointer;
+}
+.socials span:hover {
+  color: #f09819;
+}
