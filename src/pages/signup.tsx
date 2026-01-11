@@ -29,7 +29,7 @@ const Signup = () => {
     <div className="auth-container">
       <div className="auth-left">
         <img
-          src="src/Auth.jpeg"
+          src="auth2.jpeg"
           alt="Signup Illustration"
         />
       </div>

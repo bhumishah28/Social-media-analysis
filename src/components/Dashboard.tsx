@@ -4,6 +4,7 @@ import { PlatformBreakdown } from './PlatformBreakdown';
 import { TopPosts } from './TopPosts';
 import { FollowerGrowth } from './FollowerGrowth';
 import { BarChart3, Users, TrendingUp, Heart, Eye, MessageCircle, Share2 } from 'lucide-react';
+import Chatbot from './ChatBot';
 
 
 
@@ -45,10 +46,13 @@ export function Dashboard() {
   // expose insight data globally so the local Chatbot can read it
   ;(window as any).__INSIGHT_DATA = { followerData, engagementData, platformData, topPosts };
   return (
+    
     <div
       className="min-h-screen bg-gradient-to-br from-orange-500 via-orange-400 to-orange-200 p-4 md:p-8"
-      style={{ background: 'linear-gradient(135deg, #f97316 0%, #fb923c 50%, #fde68a 100%)' }}
+      style={{ background: 'linear-gradient(135deg, lightpink 0%, lightblue 50%, #fde68a 100%)' }}
+      
     >
+      <Chatbot />
       <div className="max-w-7xl mx-auto relative">
         {/* Header */}
         <div className="mb-8">
@@ -70,8 +74,6 @@ export function Dashboard() {
           <FollowerGrowth />
           <EngagementChart />
         </div>
-
-
         {/* Platform & Posts Section */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <PlatformBreakdown />
@@ -79,6 +81,7 @@ export function Dashboard() {
             <TopPosts />
           </div>
         </div>
+       
       </div>
     </div>
   );

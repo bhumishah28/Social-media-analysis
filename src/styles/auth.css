@@ -63,7 +63,7 @@
 button {
   margin-top: 20px;
   padding: 12px;
-  background: linear-gradient(to right, #ff512f, #f09819);
+  background: linear-gradient(to right, purple, rgb(209, 120, 135));
   color: white;
   border: none;
   border-radius: 25px;
@@ -76,7 +76,7 @@ button {
   margin: 20px auto 0;
 }
 .login-btn:hover {
-  background: linear-gradient(to right, #f09819, #ff512f);
+  background: linear-gradient(to right, rgb(209, 120, 135), purple);
 }
 h1{
     margin-bottom: 10px;
@@ -85,15 +85,15 @@ h1{
 
 }
 .register-link {
-  color: orangered;
+  color: darkblue;
   text-decoration: none;
   font-weight: 600;
 }
 .register-link:hover {
-  color: rgb(192, 89, 51);
+  color: purple;
 }
 input:focus {
-  border-bottom-color: orangered;
+  border-bottom-color: darkmagenta;
 }
 .or {
   text-align: center;
@@ -115,4 +115,24 @@ input:focus {
 }
 .socials span:hover {
   color: #f09819;
+}
+
+.try{
+  position:fixed;
+  right: 6px;
+
+}
+.trybutdontcry{
+  position:fixed;
+  right: 6px;
+  width: 22rem;
+  z-index: 50;
+}
+.options{
+  margin: 0rem;
+  margin-bottom: 2rem;
+}
+.messagebot{
+  background-color: rgb(195, 188, 188);
+  border-radius: 0.5rem;
 }

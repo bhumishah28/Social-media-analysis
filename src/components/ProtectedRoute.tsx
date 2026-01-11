@@ -1,7 +1,7 @@
 import { Navigate } from 'react-router-dom';
-import { JSX } from 'react/jsx-runtime';
+import React from 'react';
 
-export default function ProtectedRoute({ children }: { children: JSX.Element }) {
+export default function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const isAuth = localStorage.getItem('isAuth') === 'true';
 
   if (!isAuth) {

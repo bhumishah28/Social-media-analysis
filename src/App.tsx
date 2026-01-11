@@ -1,4 +1,5 @@
 import { Dashboard } from './components/Dashboard';
+import { DashboardProvider } from './context/DashboardContext';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './pages/login';
 import Signup from './pages/signup';
@@ -10,26 +11,26 @@ export default function App() {
     //   <Dashboard />
     // </div>
 
-     <BrowserRouter>
+    <BrowserRouter>
       <Routes>
         {/* Public routes */}
-        <Route path="*" element={<Signup />} />
-
+        <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        {/* <Route path="/signup" element={<Signup />} /> */}
 
         {/* Protected route */}
         <Route
           path="/dashboard"
           element={
             <ProtectedRoute>
-              <Dashboard />
+              <DashboardProvider>
+                <Dashboard />
+              </DashboardProvider>
             </ProtectedRoute>
           }
         />
 
         {/* Default route */}
-        <Route path="*" element={<Login />} />
+        <Route path="*" element={<Signup />} />
       </Routes>
     </BrowserRouter>
     

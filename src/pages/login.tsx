@@ -29,7 +29,7 @@ export default function Login() {
       {/* Left Illustration */}
       <div className="auth-left">
         <img
-          src="src/Auth.jpeg"
+          src="auth2.jpeg"
           alt="Login Illustration"
         />
       </div>
