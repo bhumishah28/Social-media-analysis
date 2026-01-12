@@ -16,13 +16,14 @@ import facebook from "../assests/facebook.jpg";
 import twitter from "../assests/x.jpg";
 import youtube from "../assests/youtube.jpg";
 import linkedin from "../assests/linkedin.webp";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Landing() {
   return (
     <>
       <nav className="navbar">
         <div className="nav-left">
-          <img src={logo} alt="Logo" className="logo" />
+          <img style={{ width: "10rem", height: "auto" }} src={logo} alt="Logo" className="logo" />
         </div>
 
         <div className="nav-right">
@@ -31,16 +32,29 @@ export default function Landing() {
           <a href="#key-features">Features</a>
           <a href="#platforms">Platforms</a>
           <a href="/signup" className="signin">Sign In</a>
-          <a href="/login" className="btn-primary">Log In</a>
+          <a style={{ backgroundColor: "#4b2aad", color: "white" }} href="/login" className="btn-primary">Log In</a>
         </div>
       </nav>
 
       {/* HERO */}
       <section className="hero" id="hero">
-        <h1>Stop guessing.<br />Start posting with confidence.</h1>
+        <h1>
+  Stop guessing.<br />
+  Start posting with{" "}
+  <span style={{ color: "#19084dff" }}>
+    <Typewriter
+      words={["confidence", "clarity", "data", "impact"]}
+      loop
+      cursor
+      typeSpeed={80}
+      deleteSpeed={50}
+      delaySpeed={1200}
+    />
+  </span>
+</h1>
         <p>Data-driven insights to optimize your content strategy</p>
 
-        <img className="hero-main" src={heroMain} alt="Dashboard preview" />
+        <img style={{ marginTop: "20px" }} className="hero-main" src={heroMain} alt="Dashboard preview" />
         <img className="hero-card left top" src={floating1} alt="Insight card" />
         <img className="hero-card right" src={floating3} alt="Engagement card" />
         <img className="hero-card left bottom" src={icon3} alt="Audience icon" />

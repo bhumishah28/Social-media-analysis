@@ -54,7 +54,7 @@ border-bottom: none;
 /* HERO SECTION */
 .hero {
   height: 100vh;
- background: linear-gradient(rgb(21 5 173), rgb(242 160 160));
+ background: linear-gradient(rgb(89, 1, 89), rgb(242 160 160));
 
   color: #ffffff;
   display: flex;

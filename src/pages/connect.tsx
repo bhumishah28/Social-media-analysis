@@ -1,5 +1,6 @@
 // import { useNavigate, Link, Navigate } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
+import logo from "../assests/logo.jpg";
 
 import React from "react";
 import "./connect.css";
@@ -13,6 +14,7 @@ import {
 
 const AuthLanding: React.FC = () => {
     const navigate = useNavigate();
+    const userName = localStorage.getItem("userName");
 
   return (
     <div className="connect-auth-page">
@@ -22,12 +24,13 @@ const AuthLanding: React.FC = () => {
         <div className="connect-auth-left">
           {/* Logo */}
           <div className="connect-brand">
-            <h1>
+            {/* <h1>
               INSIGHT
             </h1>
             <span>
               Social
-            </span>
+            </span> */}
+            <img src={logo} alt="Insight Social" className="connect-logo" />    
           </div>
 
           {/* Tagline */}
@@ -65,7 +68,7 @@ const AuthLanding: React.FC = () => {
         <div className="connect-auth-right">
           <div className="connect-auth-card">
             <h3>
-              Welcome Back
+              Welcome  <h1 className="text-gray-600 mt-2">{userName ? `, ${userName}` : ""}</h1>
             </h3>
             <p className="connect-subtitle">
               Sign in to access your dashboard

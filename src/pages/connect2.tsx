@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaFacebookF } from "react-icons/fa";
+import insta from "../assests/insta.jpg";
 
 const Login: React.FC = () => {
   const navigate = useNavigate();
@@ -25,10 +26,9 @@ const Login: React.FC = () => {
       <div className="connectCard">
         
         {/* Logo */}
-        <img
-          src="/instagram-logo.png"
+        <img style={{ width: "130px", borderRadius: "80px" }}
+          src={insta}
           alt="Instagram"
-          className="w-44 mb-8"
         />
 
         {/* FORM */}
