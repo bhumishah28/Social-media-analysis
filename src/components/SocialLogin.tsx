@@ -1,4 +1,5 @@
 import { Instagram, Linkedin, Facebook, Twitter, Github, BarChart3, TrendingUp, Users } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 export function SocialLogin() {
   const socialPlatforms = [
@@ -50,26 +51,21 @@ export function SocialLogin() {
         {/* Left Side - Branding */}
         <div className="text-center lg:text-left">
           <div className="inline-flex items-center gap-2 mb-6">
-            <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center">
-              <BarChart3 className="w-7 h-7 text-white" />
-            </div>
-            <span className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent">
-              InsightSocial
-            </span>
+            <img src={logo} alt="InsightSocial Logo" className="h-24 w-auto mb-2" />
           </div>
-          
+
           <h1 className="mb-6 text-slate-900">
             Analyze Your Social Media Performance
           </h1>
-          
+
           <p className="text-xl text-slate-600 mb-8">
             Connect your social accounts and get powerful insights about your audience, engagement, and growth.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
             <div className="flex flex-col items-center lg:items-start gap-2">
-              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                <TrendingUp className="w-6 h-6 text-orange-600" />
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                <TrendingUp className="w-6 h-6 text-blue-600" />
               </div>
               <div>
                 <p className="font-semibold text-slate-900">Track Growth</p>
@@ -78,8 +74,8 @@ export function SocialLogin() {
             </div>
 
             <div className="flex flex-col items-center lg:items-start gap-2">
-              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                <Users className="w-6 h-6 text-orange-600" />
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                <Users className="w-6 h-6 text-blue-600" />
               </div>
               <div>
                 <p className="font-semibold text-slate-900">Know Your Audience</p>
@@ -88,8 +84,8 @@ export function SocialLogin() {
             </div>
 
             <div className="flex flex-col items-center lg:items-start gap-2">
-              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
-                <BarChart3 className="w-6 h-6 text-orange-600" />
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                <BarChart3 className="w-6 h-6 text-blue-600" />
               </div>
               <div>
                 <p className="font-semibold text-slate-900">Compare Metrics</p>
@@ -125,14 +121,14 @@ export function SocialLogin() {
 
             <div className="mt-8 pt-6 border-t border-slate-200">
               <p className="text-xs text-slate-500 text-center">
-                By continuing, you agree to our Terms of Service and Privacy Policy. 
+                By continuing, you agree to our Terms of Service and Privacy Policy.
                 We'll never post without your permission.
               </p>
             </div>
           </div>
 
           <p className="text-center text-sm text-slate-600 mt-6">
-            Don't have an account? <a href="#" className="text-orange-600 hover:text-orange-700 font-medium">Sign up free</a>
+            Don't have an account? <a href="#" className="text-blue-600 hover:text-blue-700 font-medium">Sign up free</a>
           </p>
         </div>
       </div>
