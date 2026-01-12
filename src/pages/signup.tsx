@@ -22,7 +22,7 @@ const Signup = () => {
     e.preventDefault();
     localStorage.setItem("isAuth", "true");
     localStorage.setItem("userName", name);
-    navigate("/dashboard");
+    navigate("/connect");
   };
 
   return (
