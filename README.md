@@ -1,11 +1,54 @@
+# InsightSocial - Connect Social Accounts
 
-  # Connect Social Accounts
+InsightSocial is a powerful social media dashboard that allows users to connect their social accounts (Instagram, LinkedIn, Facebook, Twitter, GitHub) and gain deep insights into their audience, engagement trends, and growth metrics.
 
-  This is a code bundle for Connect Social Accounts. The original project is available at https://www.figma.com/design/7FYjYgVgfX8OPjfGVtjhF5/Connect-Social-Accounts.
+## Features
 
-  ## Running the code
+- **Social Login Integration**: Seamless authentication with major social platforms.
+- **Growth Tracking**: Real-time analytics to monitor your social media growth.
+- **Audience Insights**: Understand your followers with detailed demographic data.
+- **Cross-Platform Comparison**: Compare performance metrics across different social networks.
+- **Modern UI**: A clean, responsive, and aesthetically pleasing interface built with React and Tailwind CSS.
 
-  Run `npm i` to install the dependencies.
+## Getting Started
 
-  Run `npm run dev` to start the development server.
-  
+Follow these steps to set up the project locally.
+
+### Prerequisites
+
+- Node.js (Latest LTS version recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd Connect Social Accounts
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the Application
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173` (or the port shown in your terminal).
+
+## Technologies Used
+
+- **React**: UI library
+- **Vite**: Build tool and development server
+- **Tailwind CSS**: Utility-first CSS framework
+- **Lucide React**: Icon library
