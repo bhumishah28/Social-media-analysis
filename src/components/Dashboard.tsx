@@ -5,10 +5,12 @@ import { TopPosts } from './TopPosts';
 import { FollowerGrowth } from './FollowerGrowth';
 import { BarChart3, Users, TrendingUp, Heart, Eye, MessageCircle, Share2 } from 'lucide-react';
 import Chatbot from './ChatBot';
+import { useNavigate } from 'react-router-dom';
 
 
 
 export function Dashboard() {
+  const navigate = useNavigate();
   const userName = localStorage.getItem("userName");
   // Sample data for charts and lists (replace with real data as needed)
   const followerData = [
@@ -56,12 +58,27 @@ export function Dashboard() {
       <div className="max-w-7xl mx-auto relative">
         {/* Header */}
         <div className="mb-8">
-          <div className="items-center gap-3 mb-2">
-            <h1 className="text-gray-600 mt-2">Hello{userName ? `, ${userName}` : ""}</h1>
-     <div className="p-2 bg-gradient-to-br from-orange-500 to-blue-600 rounded-lg">
-<span className='flex gap-3'>  <BarChart3 className="w-8 h-8 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Social Media Analytics</h1> </span>
-     </div>
+          <div className="flex items-start justify-between gap-4 mb-2">
+            <div>
+              <h1 className="text-gray-600 mt-2">Hello{userName ? `, ${userName}` : ""}</h1>
+              <div className="mt-2 p-2 bg-gradient-to-br from-orange-500 to-blue-600 rounded-lg">
+                <span className='flex gap-3'>
+                  <BarChart3 className="w-8 h-8 text-blue-600" />
+                  <h1 className="text-3xl font-bold text-gray-900">Social Media Analytics</h1>
+                </span>
+              </div>
+            </div>
+
+            <button
+              onClick={() => {
+                localStorage.removeItem('isAuth');
+                localStorage.removeItem('userName');
+                navigate('/');
+              }}
+              className="h-10 px-4 rounded-md bg-white text-gray-800 shadow hover:shadow-md border border-gray-200 transition"
+            >
+              Logout
+            </button>
           </div>
           <p className="text-gray-600">Track your social media performance across all platforms</p>
         </div>

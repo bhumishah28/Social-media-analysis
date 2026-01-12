@@ -120,13 +120,14 @@ input:focus {
 .try{
   position:fixed;
   right: 6px;
-
+bottom: 32px;
 }
 .trybutdontcry{
   position:fixed;
   right: 6px;
   width: 22rem;
   z-index: 50;
+  bottom: 32px;
 }
 .options{
   margin: 0rem;
