@@ -11,6 +11,7 @@ import {
   FaTwitter,
   FaGithub,
 } from "react-icons/fa";
+import { Bold } from "lucide-react";
 
 const AuthLanding: React.FC = () => {
     const navigate = useNavigate();
@@ -30,7 +31,7 @@ const AuthLanding: React.FC = () => {
             <span>
               Social
             </span> */}
-            <img src={logo} alt="Insight Social" className="connect-logo" />    
+            <img style={{ width: "25rem", height: "auto" }} src={logo} alt="Insight Social" className="connect-logo" />    
           </div>
 
           {/* Tagline */}
@@ -68,7 +69,7 @@ const AuthLanding: React.FC = () => {
         <div className="connect-auth-right">
           <div className="connect-auth-card">
             <h3>
-              Welcome  <h1 className="text-gray-600 mt-2">{userName ? `, ${userName}` : ""}</h1>
+              Welcome  <h1 className="text-gray-600 mt-2">{userName ? ` ${userName}` : ""}</h1>
             </h3>
             <p className="connect-subtitle">
               Sign in to access your dashboard
@@ -78,32 +79,31 @@ const AuthLanding: React.FC = () => {
             <SocialButton
               label="Continue with Instagram"
               icon={<FaInstagram />}
-              className="bg-gradient-to-r from-purple-500 to-pink-400"
+              className="connect-instagram "
               onClick={() => navigate("/connect2")}
             />
             <SocialButton
               label="Continue with LinkedIn"
               icon={<FaLinkedinIn />}
-              className="bg-blue-700"
-              style={{backgroundColor: '#0077B5'}}
+              className=" connect-linkedin"
               onClick={() => navigate("/connect2")}
             />
             <SocialButton
               label="Continue with Facebook"
               icon={<FaFacebookF />}
-              className="bg-[#1877F2]"
+              className="connect-facebook"
               onClick={() => navigate("/connect2")}
             />
             <SocialButton
               label="Continue with Twitter"
               icon={<FaTwitter />}
-              className="bg-[#1DA1F2]"
+              className="connect-twitter "
               onClick={() => navigate("/connect2")}
             />
             <SocialButton
               label="Continue with GitHub"
               icon={<FaGithub />}
-              className="bg-[#24292e]"
+              className="connect-github"
               onClick={() => navigate("/connect2")}
             />
             </div>
@@ -119,7 +119,7 @@ const AuthLanding: React.FC = () => {
 
             <p className="connect-signup-text">
               Don&apos;t have an account?{" "}
-              <span className="cursor-pointer">
+              <span style={{fontWeight: "bold", color:"magenta"}} className="cursor-pointer">
                 Sign up free
               </span>
             </p>
