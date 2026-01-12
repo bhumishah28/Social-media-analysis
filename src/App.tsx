@@ -1,6 +1,7 @@
 import { Dashboard } from './components/Dashboard';
 import { DashboardProvider } from './context/DashboardContext';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Landing from './pages/landing';
 import Login from './pages/login';
 import Signup from './pages/signup';
 import Connect from './pages/connect';
@@ -16,6 +17,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         {/* Public routes */}
+        <Route path="/" element={<Landing />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/connect" element={<Connect />} />
         <Route path="/connect2" element={<Connect2 />} />
