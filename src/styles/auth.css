@@ -159,5 +159,7 @@ input,textarea{
   height: 3rem;
   font-size: 1rem;
   color:#000319;
+  border-radius: 0.5rem;
+  padding: 1rem;
   
 }

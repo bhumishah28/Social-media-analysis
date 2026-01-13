@@ -1,4 +1,5 @@
 import "./landing.css";
+import { FaFacebookF, FaTwitter,FaYoutube,FaInstagram,FaLinkedin} from "react-icons/fa";
 import logo from "../assests/logo.jpg";
 import heroMain from "../assests/main2.PNG";
 import floating1 from "../assests/floating1.jpg";
@@ -180,19 +181,19 @@ export default function Landing() {
           <div className="footer-section">
             <h4>Follow us</h4>
             <div className="social-icons">
-              <img src={insta} alt="Instagram" />
-              <img src={facebook} alt="Facebook" />
-              <img src={twitter} alt="X" />
-              <img src={youtube} alt="YouTube" />
-              <img src={linkedin} alt="LinkedIn" />
+              <span><FaFacebookF size={20} /></span>
+              <span><FaTwitter size={20} /></span>
+              <span><FaYoutube size={20} /></span>
+              <span><FaInstagram size={20} /></span>
+              <span><FaLinkedin size={20} /></span>
             </div>
           </div>
 
           {/* Right: Newsletter */}
           <div className="footer-section">
             <h4>Stay updated</h4>
-            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }} className="newsletter">
-              <input type="email" placeholder="Your email" />
+            <div style={{ display: "flex", flexDirection: "column" }} className="newsletter">
+              <input style={{backgroundColor:"white"}} type="email" placeholder="Your email" />
               <button>Subscribe</button>
             </div>
           </div>
